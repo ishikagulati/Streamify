@@ -50,7 +50,7 @@
     height: 7.4rem;
     background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
   } */
-  .banner {
+  /* .banner {
     color: white;
     object-fit: contain;
     height: 60vh;
@@ -118,5 +118,135 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+  }
+   */
+   .banner {
+    color: white;
+    object-fit: contain;
+    height: 60vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    background-size: cover;
+    background-position: center center;
+    transition: background-image 0.5s ease-in-out;
+  }
+  
+  .banner_contents {
+    margin-left: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    max-width: 50%;
+  }
+  
+  .banner_title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  
+  .banner_description {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  }
+  
+  .banner_buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .banner_button {
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: rgba(51, 51, 51, 0.7);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .banner_button:hover {
+    color: #000;
+    background-color: #e6e6e6;
+    transform: scale(1.05);
+  }
+  
+  .banner--fadeBottom {
+    height: 7.4rem;
+    background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .banner {
+      height: 50vh;
+      padding: 15px;
+    }
+  
+    .banner_contents {
+      margin-left: 20px;
+      padding: 15px;
+      max-width: 70%;
+    }
+  
+    .banner_title {
+      font-size: 2rem;
+    }
+  
+    .banner_description {
+      font-size: 0.9rem;
+    }
+  
+    .banner_buttons {
+      gap: 10px;
+    }
+  
+    .banner_button {
+      padding: 8px 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .banner {
+      height: 40vh;
+      padding: 10px;
+    }
+  
+    .banner_contents {
+      margin-left: 10px;
+      padding: 10px;
+      max-width: 90%;
+    }
+  
+    .banner_title {
+      font-size: 1.5rem;
+    }
+  
+    .banner_description {
+      font-size: 0.8rem;
+    }
+  
+    .banner_buttons {
+      gap: 5px;
+    }
+  
+    .banner_button {
+      padding: 5px 10px;
+      font-size: 0.8rem;
+    }
   }
   
